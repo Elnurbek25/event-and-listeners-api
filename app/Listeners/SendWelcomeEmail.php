@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Listeners;
-
 use App\Mail\WelcomeEmail;
 use App\Events\UserRegistered;
 use Illuminate\Support\Facades\Mail;
