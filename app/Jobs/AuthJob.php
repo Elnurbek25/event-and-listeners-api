@@ -6,7 +6,6 @@ use App\Models\User;
 use App\Events\UserRegistered;
 use Illuminate\Foundation\Queue\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
-
 class AuthJob implements ShouldQueue
 {
     use Queueable;
