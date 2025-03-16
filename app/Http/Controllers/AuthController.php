@@ -6,6 +6,7 @@ use App\Models\User;
 use App\Jobs\AuthJob;
 use Illuminate\Http\Request;
 use App\Events\UserRegistered;
+
 use App\Http\Requests\LoginRequest;
 use App\Http\Resources\UserResource;
 use Illuminate\Support\Facades\Hash;
@@ -13,6 +14,7 @@ use App\Http\Requests\RegisterRequest;
 
 class AuthController extends Controller
 {
+
     public function register(RegisterRequest $request){
         $user = new User();
         $user->name = $request->name;
